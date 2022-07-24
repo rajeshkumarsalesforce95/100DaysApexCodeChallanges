@@ -1,0 +1,3 @@
+<apex:page apiVersion="49.0">
+    <apex:sectionHeader title="Empoyee" subtitle="New Employee" help="/apex/SalesforcePage" description="Empoyee New Registration Form"/>
+</apex:page>

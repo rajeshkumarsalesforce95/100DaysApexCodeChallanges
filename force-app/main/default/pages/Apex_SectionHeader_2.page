@@ -1,0 +1,7 @@
+<apex:page >
+    <apex:sectionHeader title="Product" subtitle="New Product" help="/apex/SalesforcePage"/>
+    Product Name : <br/><br/>
+    Product Price : <br/><br/>
+    Product Quantity : <br/><br/>
+    
+</apex:page>

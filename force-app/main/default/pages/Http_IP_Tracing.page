@@ -1,0 +1,22 @@
+<apex:page controller="Http_IP_Tracing">
+    <apex:form >
+        <apex:inputText value="{!ipAddress}"/>
+        <apex:commandButton value="Search IP Address" action="{!traceIpAddress}"/>
+        <br/><br/>
+        <apex:pageBlock mode="mainDetail" rendered="{! !ISNULL(resMap)}">
+            <apex:pageBlockTable value="{!resMap}" var="a">
+                <apex:column value="{!a}" headerValue="Property"/>
+                <apex:column value="{!resMap[a]}" headerValue="Value"/>
+            </apex:pageBlockTable>
+            <br/><br/>
+            
+            <apex:pageBlockTable value="{!xmlMap}" var="b">
+                <apex:column value="{!b}" headerValue="Property"/>
+                <apex:column value="{!xmlMap[b]}" headerValue="Value"/> 
+            </apex:pageBlockTable>
+            <br/><br/>
+            <apex:inputTextarea rows="30" cols="80" value="{!result}"/>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

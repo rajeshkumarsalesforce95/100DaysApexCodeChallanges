@@ -1,0 +1,13 @@
+<apex:page controller="Http_Pincode_Example">
+    <apex:form >
+    	<apex:inputText value="{!cityName}"/>
+        <apex:commandButton value="Search" action="{!getInvoke}"/>
+        <br/>
+        <br/>
+        <!--<apex:dataTable value="{!resMap}" var="a" frame="box" rules="rows" cellpadding="5" width="1000" rendered="{! !ISNULL(resMap)}">
+           <apex:column value="{!a}" headerValue="Property"/>
+           <apex:column value="{!resMap[a]}" headerValue="Value"/>
+        </apex:dataTable> -->
+        Zip Code : {!pincode}
+    </apex:form>
+</apex:page>

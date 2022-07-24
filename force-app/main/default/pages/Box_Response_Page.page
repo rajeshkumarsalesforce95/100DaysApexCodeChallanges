@@ -1,0 +1,37 @@
+<apex:page controller="Box_Integration_Example" action="{!readCode}">
+    <apex:form >
+        <apex:pageBlock title="Authorization" id="pb">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Request Token" action="{!requestToken}" reRender="pb"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="1">
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Client Id : "/>
+                    <apex:inputText value="{!clientId}" size="50"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Client Secret : "/>
+                    <apex:inputText value="{!clientSecret}" size="50"/>
+                </apex:pageBlockSectionItem>                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Code : "/>
+                    <apex:outputLabel value="{!code}"/>
+                </apex:pageBlockSectionItem> 
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="1" rendered="{! !ISNULL(accessToken)}">
+                <apex:pageBlockSectionItem >    
+                    <apex:outputLabel value="access_token :"/> 
+                    <apex:outputLabel value="{!accessToken}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <br/>
+            <br/>
+            {!result}
+            <br/>
+            <br/>
+            {!resultRes}
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

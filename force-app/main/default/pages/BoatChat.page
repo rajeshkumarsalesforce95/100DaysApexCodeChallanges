@@ -1,0 +1,32 @@
+<apex:page >
+
+ 
+    
+<img id="liveagent_button_online_5734C000000Caqr" style="display: none; border: 0px none; cursor: pointer" onclick="liveagent.startChat('5734C000000Caqr')" src="https://chatbotdev-nestlewaters.cs61.force.com/HostedResources/resource/1640457314000/enter" />
+<img id="liveagent_button_offline_5734C000000Caqr" style="display: none; border: 0px none; " src="https://chatbotdev-nestlewaters.cs61.force.com/HostedResources/resource/1640457357000/exit" />
+<script type="text/javascript">
+     
+if (!window._laq) { window._laq = []; }
+window._laq.push(
+    function(){
+        
+        liveagent.showWhenOnline('5734C000000Caqr', document.getElementById('liveagent_button_online_5734C000000Caqr'));
+		liveagent.showWhenOffline('5734C000000Caqr', document.getElementById('liveagent_button_offline_5734C000000Caqr'));
+                                                  
+	}
+    //embedded_svc.settings.avatarImgURL = "https://projects2021com-dev-ed--c.visualforce.com/resource/1640775522000/avtar";
+);
+</script>
+<script type='text/javascript' src='https://c.la2-c1cs-ia5.salesforceliveagent.com/content/g/js/53.0/deployment.js'> 
+    
+
+   </script>
+
+<script type="text/javascript">
+    
+liveagent.init('https://d.la2-c1cs-ia5.salesforceliveagent.com/chat', '5724C0000008OV8', '00D4C0000001Bjk');
+    
+  
+</script>  
+   
+</apex:page>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Whenever the user will upload the data using Data loader in Production Org then this Setting will be useful for deactivate the trigger directly in Production.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Trigger Prevent</label>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,45 @@
+<apex:page >
+    <h1>
+       Get back to growth with the world’s #1 CRM, powered by Customer 360.<br/> 
+    </h1>
+    “Salesforce is making our sales teams stronger and more resilient, while transforming the way we manage our customers, leads, opportunities, and channel partners.”<br/>
+    
+    <br/>
+    <h3>Bharat Petroleum fuels connected customer experiences with Salesforce</h3><br/><br/>
+Bharat Petroleum Corporation India Limited (BPCL) is powering India’s economy in multiple ways. Over 8.5 crore families depend on the company’s 6,500+ LPG distributors to supply their homes with cooking gas. About 1 crore vehicles tank up every day at one of BPCL’s 18,000+ petrol pumps. And more than 50 airports use the company’s high-quality products to fuel their aircrafts. The Fortune 500 ‘Maharatna’ conglomerate also serves 8000+ industrial and commercial customers across multiple sectors like Cement, Railways, Paints, and Petrochemicals<br/>.
+
+In short, its scale and reach are immense. <br/> 
+
+“We have seven business units addressing the needs of B2C and B2B customers across urban and rural areas, while also managing thousands of dealers and distributors,” says T. Peethambaran, Executive Director (Digital Business), BPCL. “With operations this vast and complex, we need a strong digital platform to achieve a holistic perspective of our customers. That’s where Salesforce comes in.”<br/>
+
+Salesforce is partnering with BPCL to fulfil the vision of ‘One BPCL’ — uniting all business units through a single, shared customer view.<br/>
+
+“We want to be so tuned in to the customer that we can proactively anticipate their needs, and delight them at every turn,” says Peethambaran.<br/>
+
+Striking oil: Finding a fresh solution to CRM issues<br/>
+Before Salesforce, BPCL relied on multiple homegrown systems to serve customers. Since each system was custom-coded for a specific purpose, it couldn’t be replicated or scaled up across business units to provide a consolidated customer view. As a result, each business unit communicated with customers in silos, fracturing the customer experience.<br/>
+
+Meanwhile, management teams didn’t have enough insights on which customers were using which services. They didn’t know, for example, how many LPG customers were also visiting BPCL’s fuel stations, or using its industrial and commercial products. Without this data, they couldn’t determine whether the company was earning its real share of the customer’s wallet.<br/>
+
+To solve these challenges, BPCL initiated Project Anubhav. Its objective was to implement a technology platform that would cut across business units, giving teams a unified view of the customer, while also giving customers a consistent experience across touchpoints.<br/>
+
+“We had an exhaustive evaluation process and chose Salesforce since the solutions it offered matched our requirements in almost all areas,” says Rahul Tandon, Head, Digital Transformation, BPCL who championed and led Project Anubhav. “The best part is that most Salesforce features can be implemented out-of-the-box even in a business as complex as ours.<br/>
+
+“Today, Salesforce is making our sales teams stronger and more resilient, while transforming the way we manage our customers, leads, opportunities, and channel partners.”<br/>
+
+Refining sales processes and customer experiences with a single source of truth<br/>
+Salesforce is helping BPCL strengthen its sales and customer experiences. Internally, the platform has been branded as “Sales Buddy” because it acts as a true partner to sales teams, giving them all the data and tools they need to succeed.<br/>
+
+Through Sales Cloud, sales officers can capture leads, monitor pipelines, and close deals faster. In an instant, they can pull up the complete details of any customer to understand their expectations, and engage with them more meaningfully.<br/>
+
+Since all business units have a shared customer view, it doesn’t matter whom the customer is talking to and on which channel. Their journey at every touchpoint is seamless.<br/>
+
+“Customers will no longer see the company as multiple business units, but as one entity, offering them a consistently great experience,” says Peethamabaran<br/>.
+
+Cross-selling and upselling are also improving with complete customer visibility. An LPG sales officer can easily identify a potential opportunity in the industrial segment. Or, a fuel station customer can be tagged as a lead for the lubricants business. This way, everyone works towards optimising the company’s share of wallet.<br/>
+
+BPCL is also digitising customer interactions through Project Anubhav. An intuitive mobile app enables customers to book an LPG cylinder anytime, anywhere. Meanwhile, the “Urja” website chatbot helps customers find answers to queries quickly and on their terms. These initiatives will also be integrated with Salesforce, enabling BPCL sales and service teams to act quickly and decisively.  <br/>
+
+“We’re making it easier for customers to do business with us—and their feedback has been resoundingly positive,” says Peethambaram.<br/>
+    
+</apex:page>

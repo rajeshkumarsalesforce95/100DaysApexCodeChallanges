@@ -1,0 +1,350 @@
+<apex:page >
+
+<!--  
+<apex:page apiVersion="39.0" showHeader="true" sidebar="false" setup="true" rendered="true" >
+
+Visualforce Page -2021-10-24 <br/><br/>
+===================================
+    <br/><br/>
+    
+Q.1 What is Visualforce?<br/>
+Ans : Visalforce is a framework that allows developers to build sophisticated, custom interfaces that can be hosted natively on the lightning platform.
+
+<br/><br/>
+2. Visualforce framework includes - <br/>
+     - Tag based Markup langauge.<br/>
+     - Controllers
+
+    <br/><br/>
+    
+    
+3. Tag based Markup langauge -<br/>
+     - This tag based scripting language that are embeded with in the page.<br/>
+     - It consist of HTML,Scripting langaguge that are supported by browsers-like Javascript,Ajax,JQuery,Angular,backbone..etc<br/>
+     - Visualforce Componets
+<br/><br/>
+
+
+4. Server-Side Controllers :-<br/>
+     - This will spefcify what is the action that should be performed when user interacts with any<br/>
+        one of the element on the UI.<br/>
+     - Server-Side Controllers are classified into four types -<br/>
+         a. Standard Controller<br/>
+         b. Standard List Controller<br/>
+         c. Custom Controller<br/>
+         d. Externtions<br/>
+    <br/><br/>
+    
+    -> StandardController : - <br/>
+          a. This will be used to refer to the standard functionlalites which are defined by the salesforce on  a object.<br/><br/>
+
+    -> Standard List Controller : <br/>
+          a. If you want to refer to the list of records from the object using standard functionlalites then we will<br/>
+              use for Standard List Controller  <br/><br/>   
+
+   -> Custom Controller :<br/>
+          a. If we want to build your own logics then we will go for custom controllers.<br/>
+          b. Custom controller is nothing but apex classess.<br/><br/>
+      
+   -> Extentions :<br/>
+           a. If you want to take the combination of standard functionlalites and custom functionlalites together<br/>
+               so then we will use for extentions.<br/>
+    
+    
+    
+    
+<br/><br/>
+
+5. MVC Archieture - (Model View Controller)<br/>
+
+     - Model - Object, fields, Relations.<br/>
+     - View - PageLayouts, RecordType, MiniPageLayouts, Search Layout, Visualforce pages<br/>
+     - Controller - Apex Classes, Triggers, Webservices <br/><br/>
+    
+5. Where we can use Visualforce Page?<br/>
+      - To build custom pages or UI<br/>
+      - To override standard pages and tabs<br/>
+      - To create custom tabs<br/>
+      - To Add custom buttons on the satndard pages<br/>
+      - To Override standard buttons<br/>
+      - To create cutom side-bar components.<br/><br/>
+
+    -->
+    
+<!--
+   1. apex:page Component
+
+====================================
+1. Page is the name of the componet.
+2. It is defined under the namespace of apex.
+3. Every VF Page will start and end with apex:page
+4. Attributes :- It is nothing but properties
+      => Id : 
+            - It is a unique string.
+            - It is used to reffer to the element uniquely in the page.
+
+      => apiVersion :
+            - This will specify version of the api we are using in the page.
+            - If you don't mention the api, by default it will take latest version. i.e-40.0
+            - If you want to use any version less then the current version mention as api version="42.0"
+   
+      => showHeader :
+             - It is a boolean value.
+             - When set as true, salesforce standard header and sidebar component will be displayed.
+             - When set as false, salesforce standard header and sidebar component will be hidden.
+             - Default value is true.
+      
+      => sidebar :
+             - It is a boolean value.
+             - When set as true, salesforce standard sidebar component will be displayed.
+             - When set as false, salesforce standard sidebar component will be hidden.
+             - Default value is true.
+
+      => Setup :
+             - It is a boolean value.
+             - When set as true, salesforce standard froce.com setup menu will be displayed.
+             - When set as false, salesforce setup menu will be hidden.
+             - Default value is false.
+   
+      => rendered : 
+             - Should i display page or not.
+             - It is a boolean value.
+             - When set as true, apex:page will be displayed.
+             - when set as false, apex:page will be hidden.
+             - Default value is true.
+   
+      => renderAs : 
+             - This will convert the page as pdf and display.
+             - Example -renderAs="pdf"
+
+      => contentType : 
+              - To convert page to word document.
+              - This will specify how the content of the page should be displayed.
+              - for Example -> 
+                        word - contentType="vnd.msword#filename.doc"
+                               apex:page contentType="vnd.msword#example.doc"
+                        excel : contentType="vnd.ms-excel#example.xls"
+
+      => readOnly :
+               - It is a boolean value.
+               - When set as true, contenet will be displayed in readable format.
+-------------------------------------END------------------------------------------------------------------->
+
+<!--
+   2. apex:sectionHeader Components: 
+
+========================================= 
+Attributes :
+
+        => title:
+             - It is a string value.
+             - This will be displayed as title for header.
+
+        => subtitle :
+              - It is a string value.
+              - This will be displayed as caption for the header.
+
+        => help :
+              - It is a url of a page.
+              - When we click on the help for the page, page whose url is given will be opened.
+
+        => description :
+              - It is a string value.
+              - This will be displayed under the header element .
+
+        => rendered :
+               - It is a boolean value.
+               - When set as true, it will be displayed on the page.
+
+
+
+Examples :
+
+<apex:sectionHeader title="Account" subtitle="New Account" help="/apex/Visualforce_Introduction" description="This is home page"/>
+    /apex/pageName
+
+-->
+   
+    
+
+<!--
+   3. apex:pageBlock Components: 
+===================================
+- This will create block on the page.
+- We can create any number of blocks on the page.
+- Attributes : 
+       => title :
+             - It is a string value.
+             - This will be displayed on the left corner of the pageBlock.
+       => tabStyle :
+              - This is the sObject name
+              - This will specify the name of the object whoes style has to be applid.
+       => helpTitle : 
+              - It is a string value.
+              - This will be displayed on the right corner of the pageBlock, helpTitle is titleof the url.
+       => helpUrl :
+               - It's the url of the page.
+               - When we click on the helpTitle this page will be opened.
+       => dir :
+               - This will specify the direction of the content.
+               - Possible values are RTL,LTR
+       => mode :
+               - This will be specify format in which content should be displayed.
+-->
+<!--    
+    <apex:pageBlock >
+        Name  : Rajesh Kumar <br/><br/>
+        Phone : 9358529110<br/><br/>
+        Email : rajesh.salesforce95@gmail.com<br/><br/>
+        Gmail : rajesh.salesforce95@gmail.com<br/><br/>
+        Fax   : EX123123<br/><br/>
+        
+    </apex:pageBlock>
+    
+    <apex:pageBlock title="=====Customer Details =======">
+        Name  : Rajesh Kumar <br/><br/>
+        Phone : 9358529110<br/><br/>
+        Email : rajesh.salesforce95@gmail.com<br/><br/>
+        Gmail : rajesh.salesforce95@gmail.com<br/><br/>
+        Fax   : EX123123<br/><br/>
+        
+    </apex:pageBlock>
+    
+    <apex:pageBlock title="=====Customer Details =======" tabStyle="Lead">
+        Name  : Rajesh Kumar <br/><br/>
+        Phone : 9358529110<br/><br/>
+        Email : rajesh.salesforce95@gmail.com<br/><br/>
+        Gmail : rajesh.salesforce95@gmail.com<br/><br/>
+        Fax   : EX123123<br/><br/>
+        
+    </apex:pageBlock>
+    
+    <apex:pageBlock title="=====Customer Details =======" tabStyle="Lead" helpTitle="Need help??" helpUrl="/apex/SalesforcePage">
+        Name  : Rajesh Kumar <br/><br/>
+        Phone : 9358529110<br/><br/>
+        Email : rajesh.salesforce95@gmail.com<br/><br/>
+        Gmail : rajesh.salesforce95@gmail.com<br/><br/>
+        Fax   : EX123123<br/><br/>
+        
+    </apex:pageBlock>
+    
+    <!-- RTL =Right To Left and, LTR= Left To Right direction -->
+    <!--<apex:pageBlock title="=====Customer Details =======" tabStyle="Lead" helpTitle="Need help??" helpUrl="/apex/SalesforcePage" dir="RTL">
+        Name  : Rajesh Kumar <br/><br/>
+        Phone : 9358529110<br/><br/>
+        Email : rajesh.salesforce95@gmail.com<br/><br/>
+        Gmail : rajesh.salesforce95@gmail.com<br/><br/>
+        Fax   : EX123123<br/><br/>
+        
+    </apex:pageBlock>
+    
+    <apex:pageBlock title="=====Customer Details =======" tabStyle="Lead" helpTitle="Need help??" helpUrl="/apex/SalesforcePage" mode="maindetail">
+        Name  : Rajesh Kumar <br/><br/>
+        Phone : 9358529110<br/><br/>
+        Email : rajesh.salesforce95@gmail.com<br/><br/>
+        Gmail : rajesh.salesforce95@gmail.com<br/><br/>
+        Fax   : EX123123<br/><br/>
+        
+    </apex:pageBlock>-->
+
+    
+<!--
+   4. apex:form,apex:commandButton,apex:commandLink,apex:pageBlockButton,apex:pageBlockSection Components: 
+============================================================================================================
+
+1. apex:commandButton :
+------------------------------------
+i).  This will create button on the page.
+ii). This is child component of apex:form
+iii). Attributes :
+    
+        => value :
+              - It is a string value.
+              - This will be displayed on the button.
+        => disabled :
+               - It is a boolean value.
+               - When set as true, button will be disabled on the page.
+               - Default value is false.
+       => style :
+               - It is used to set css for the component.
+    
+       => action :
+               - This will specify the action that should be performed when we click on the button.
+               - This can be a url of the page or call method from apex class.
+       => reRender :
+               - Don't reload the entire page, only thing is part of the page is reloading.
+               - It is a boolean value.
+               - If you want part of the page to be re-loaded not entire page to be re-loaded then we use reRender.
+
+
+Example :
+
+   <apex:form id="one">
+		<apex:commandButton value="Submit"/>    
+        <apex:commandButton value="Edit" rendered="false"/>    
+        <apex:commandButton value="Cancel" disabled="true"/>
+        <apex:commandButton value="New Account" style="background:yellow;color:red;"/>
+        <apex:commandButton value="Call VF Page" action="/apex/salesforcepage"/>
+        <apex:commandButton value="reRender" reRender="one"/>    
+    </apex:form>
+
+
+2. apex:pageBlockButtons :
+------------------------------------
+1. This is a child component of pageblock
+2. This will display the data in the header and footer of the pageblock.
+3. &nbsp; - One Character space will come
+4. Attributes :
+       => dir :
+               - This will specify the direction of the content that should be displayed.
+               - Possible values are RTL and LTL
+       => location :
+                - This will specify where the content should be displayed.
+                - Possible values are bottom, top,all
+-->
+
+    <apex:form >
+    	<apex:pageBlock title="Example">
+        	<apex:pageBlockButtons >
+            	<apex:commandButton value="Submit"/>
+                <apex:commandButton value="Delete"/>
+            </apex:pageBlockButtons>
+            First Name :<br/> <br/>
+            Last Name  :<br/><br/>
+            Email      :
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Example">
+        	<apex:pageBlockButtons location="bottom">
+            	<apex:commandButton value="Submit"/>
+                <apex:commandButton value="Delete"/>
+            </apex:pageBlockButtons>
+            First Name :<br/> <br/>
+            Last Name  :<br/><br/>
+            Email      :
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Example">
+        	<apex:pageBlockButtons location="top">
+            	<apex:commandButton value="Submit"/>
+                <apex:commandButton value="Delete"/>
+            </apex:pageBlockButtons>
+            First Name :<br/> <br/>
+            Last Name  :<br/><br/>
+            Email      :
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Example">
+        	<apex:pageBlockButtons location="top">
+            	City  : &nbsp;&nbsp;&nbsp;&nbsp; 
+                Place :
+            </apex:pageBlockButtons>
+            First Name :<br/> <br/>
+            Last Name  :<br/><br/>
+            Email      :
+        </apex:pageBlock>
+    </apex:form>
+
+
+    
+</apex:page>

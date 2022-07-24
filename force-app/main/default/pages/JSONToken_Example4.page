@@ -1,0 +1,8 @@
+<apex:page controller="JSONToken_Example4">
+    <apex:pageBlock >
+    	<apex:pageBlockTable value="{!resultMap}" var="a">
+        	<apex:column value="{!a}"/>
+            <apex:column value="{!resultMap[a]}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

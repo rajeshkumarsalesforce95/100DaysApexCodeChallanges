@@ -1,0 +1,9 @@
+<apex:page controller="JSON_Example3"> 
+    <apex:form >
+        
+        <apex:inputText value="{!searchText}"/>
+        <apex:commandButton value="Search Account Industry" action="{!searchMethod}" reRender="one"/>
+        <apex:outputlabel value="{!result}" id="one"/>
+        
+    </apex:form>
+</apex:page>

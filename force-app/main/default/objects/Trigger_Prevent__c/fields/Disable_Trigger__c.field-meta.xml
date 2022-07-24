@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disable_Trigger__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If the checkbox is true then the trigger will be deactivated, If false then the trigger will be activated. By default, the trigger is activated always.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the checkbox is true then the trigger will be deactivated, If false then the trigger will be activated. By default, the trigger is activated always.</inlineHelpText>
+    <label>Disable Trigger</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

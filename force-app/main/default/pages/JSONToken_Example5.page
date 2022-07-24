@@ -1,0 +1,6 @@
+<apex:page controller="JSONToken_Example5">
+    <apex:pageBlock >
+        Integer : {!value} <br/><br/>
+        Account : {!acc.name} <br/>
+    </apex:pageBlock>
+</apex:page>

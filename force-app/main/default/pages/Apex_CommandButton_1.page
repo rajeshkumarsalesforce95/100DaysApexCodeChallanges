@@ -1,0 +1,9 @@
+<apex:page >
+    <apex:sectionHeader title="Employee" subtitle="New Employee"/>
+    <apex:form >
+    	<apex:pageBlock title="Employee" >
+               <apex:commandButton value="Save"/>
+               <apex:commandButton value="Delete"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

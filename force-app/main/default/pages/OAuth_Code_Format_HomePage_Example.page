@@ -1,0 +1,27 @@
+<apex:page controller="OAuth_Code_Format_Example">
+    <apex:form >
+        <apex:pageBlock title="Authorization">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Request Code" action="{!requestCode}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="1">
+                <!--<apex:pageBlockSectionItem>
+                    <apex:outputLabel value="EndPoint"/>
+                    <apex:inputText value="{!endPoint}"/>
+                </apex:pageBlockSectionItem>-->
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Client Id"/>
+                    <apex:inputText value="{!clientId}" size="100"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="RedirectURL"/>
+                    <apex:outputLabel value="{!redirectURL}"/>
+                </apex:pageBlockSectionItem>
+                <!--<apex:pageBlockSectionItem>
+                    <apex:outputLabel value="Code"/>
+                    <apex:inputText value="{!code}"/>
+                </apex:pageBlockSectionItem>-->
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

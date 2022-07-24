@@ -1,0 +1,16 @@
+<apex:page controller="JSON_Example2">
+    <apex:form >
+    	<apex:pageBlock title="JSON_Example2">
+            <apex:pageBlockButtons location="top">
+                 <apex:commandButton value="Sumbit" action="{!createAccount}" reRender="one"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection >
+            	<apex:inputText value="{!acc.name}"/>
+                <apex:inputText value="{!acc.Phone}"/>
+                <apex:inputText value="{!acc.Rating}"/>
+                <apex:inputText value="{!acc.Industry}"/>
+            </apex:pageBlockSection>
+            <apex:outputLabel value="{!result}" id="one"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

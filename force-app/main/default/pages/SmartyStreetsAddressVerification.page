@@ -1,0 +1,40 @@
+<apex:page controller="SmartyStreetsAddressVerification">
+    <apex:form >
+    	<apex:pageBlock title="Address Verification" id="one">
+            <apex:pageBlockButtons location="top">
+        		<apex:commandButton value="Verify Address" action="{!verifyAddress}"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="auth-id : ">
+                        <apex:inputText value="{!authid}" size="20"/>
+                    </apex:outputLabel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="auth-token : ">
+                        <apex:inputText value="{!auth_token}" size="20"/>
+                    </apex:outputLabel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Street : ">
+                        <apex:inputText value="{!street}" size="20"/>
+                    </apex:outputLabel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="City : ">
+                        <apex:inputText value="{!city}" size="20"/>
+                    </apex:outputLabel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="State : ">
+                        <apex:inputText value="{!state}" size="20"/>
+                    </apex:outputLabel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <br/>
+            <br/>
+            {!resultResponse}
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

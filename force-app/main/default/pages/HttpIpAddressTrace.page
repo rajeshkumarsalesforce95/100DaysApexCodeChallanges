@@ -1,0 +1,12 @@
+<apex:page controller="HttpIpAddressTrace">
+    <apex:form >
+        <apex:inputText value="{!ipAddress}" />
+        <apex:commandButton value="Trace IP" action="{!traceMe1}"/> <br/><br/>
+        <apex:pageBlock title="Result" rendered="{! !ISNULL(result)}">
+              <apex:pageBlockTable value="{!resMap}" var="a">
+                  <apex:column value="{!a}" headerValue="Header"/>
+                  <apex:column value="{!resMap[a]}" headerValue="Value"/>
+              </apex:pageBlockTable> 
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
